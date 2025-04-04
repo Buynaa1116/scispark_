@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Багшийн Профайл</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-container {
+            width: 320px;
+            background: white;
+            padding: 24px;
+            border-radius: 14px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            position: relative;
+        }
+        .back-button {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            font-size: 24px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+        .profile-img {
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 12px;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 14px;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 16px;
+            text-align: left;
+        }
+        .experience {
+            text-align: left;
+            font-size: 14px;
+            margin-top: 8px;
+            color: #333;
+            line-height: 1.7;
+        }
+        .demo-video {
+            width: 100%;
+            margin-top: 14px;
+            border-radius: 8px;
+        }
+        .cta-button {
+            display: block;
+            background-color: #FFC107;
+            color: black;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 16px;
+            font-size: 16px;
+        }
+        .cta-button:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <a href="SciSpark.html" class="back-button">←</a>
+        <img src="Bagsh.png" alt="Далайбилэг Батсуурь" class="profile-img">
+        <div class="name">Далайбилэг Батсуурь</div>
+
+        <div class="section-title">#Ажлын туршлага:</div>
+        <div class="experience">
+            - 84р сургууль 2016-2022 / биологийн багш/<br>
+            - ТомЁ сургуулийн 2022 оноос хойш / биологи, ЭМ-ийн багш/
+        </div>
+
+        <div class="section-title">#Демо хичээл:</div>
+        <img src="video.png" alt="Demo Lesson" class="demo-video">
+
+        <div class="section-title">#Хуваарь</div>
+        <div class="experience">
+            Хичээлэх цагаа багштай тохирох боломжтой
+        </div>
+
+        <a href="demo.html" class="cta-button">Хичээл заалгах</a>
+
+    </div>
+   
+
+</body>
+</html>

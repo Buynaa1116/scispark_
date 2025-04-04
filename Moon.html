@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нарны хиртэлт</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 320px;
+            height: 600px;
+            background: url(space.png) no-repeat center center/cover;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .top-bar img {
+            width: 50px;
+            height: 50px;
+        }
+        .character {
+            position: absolute;
+            right: -10px;
+            bottom: 50px;
+            width: 120px;
+        }
+        .speech-bubble {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .speech-bubble::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 20%;
+            border-width: 10px;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+
+       <div class="container">
+       
+        <div class="top-bar">
+        <a href="Back1.html"> <img src="sun.png" alt="Sun"> </a>
+            <a href="Back1.html">    <img src="earf.png" alt="Earth"> </a>
+                <a href="Back1.html">    <img src="moooo.png" alt="Moon"> </a>
+        </div>
+
+        
+        <div class="speech-bubble">Нарны хиртэлт үүсгээрэй.</div>
+
+       
+        <img src="avatar.png" class="character" alt="Character">
+    </div>
+ 
+</body>
+</html>
