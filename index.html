@@ -1,13 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Page</title>
+    <title>Хичээлүүд</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            position: relative;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .profile-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: flex;
+            gap: 10px;
+        }
+        .card {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card .date {
+            font-size: 12px;
+            color: gray;
+        }
+        .banner {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+        .banner div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .teacher-section {
+            display: flex;
+            gap: 10px;
+        }
+        .teacher {
+            flex: 1;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .teacher img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .teacher .info {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .card:hover{
+        background-color: darkgrey;
+        }
+        .hover:hover{
+            background-color: darkgray;
+        }
+        .teacher:hover{
+         background-color: darkgray;
+        }
+       
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Page!</h1>
-    <p>This is a simple example of an HTML page.</p>
-    <img src="image.jpg" alt="My Image">
+    <div class="container">
+
+        <div class="logo">
+            <img src="logo.png" alt="SciSpark Logo">
+            <h2 style="font-weight: bold; margin-right: 180px;">SciSpark</h2>
+            <img src="pro.png" alt="Profile" class="profile-img">
+        </div>
+
+        <div class="top-section">
+            <h2>Хичээлүүд <span style="font-size: 14px; color: gray;">/санал болгох/</span></h2>
+            
+        </div>
+        
+        <div class="section">
+            <div class="cards">
+                <div class="card">
+                    <a href="demo.html"> <img src="1.png" alt="Татах хүч"> </a>
+                    <div>Татах хүч</div>
+                    <div class="date">/2022.05.06/</div>
+                </div>
+                <div class="card">
+                    <a href="demo.html"> <img src="2.png" alt="Нар, сарны хиртэлт"> </a>
+                    <div>Нар, сарны хиртэлт</div>
+                    <div class="date">/2023.05.06/</div>
+                </div>
+                <div class="card">
+                    <a href="demo.html"> <img src="3.png" alt="Соронзон орон"> </a>
+                    <div>Соронзон орон</div>
+                    <div class="date">/2024.05.06/</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Туршилтууд</h2>
+            <div class="banner">
+                <a href="Moon.html"> <img src="4.png" alt="Нар, сарны хиртэлт"> 
+                <div class="hover"> Нар, сарны хиртэлт</div> </a>
+            </div>
+            <div class="banner">
+                <a href="demo.html"> <img src="5.png" alt="Соронзон орон"> 
+                <div class="hover">Соронзон орон</div> </a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Багш нар</h2>
+            <div class="teacher-section">
+                <div class="teacher">
+                    <a href="demooo.html">
+                    <img src="6.png" alt="Б.Далайбилэг">
+                </a>
+                    <div>Б.Далайбилэг</div>
+                    <div class="info">6-9-р анги</div>
+                    <div class="info">Биологи</div>
+                </div>
+                <div class="teacher">
+                    <a href="demo.html"> <img src="7.png" alt="Т.Намуун"> </a>
+                    <div>Т.Намуун</div>
+                    <div class="info">10-12-р анги</div>
+                    <div class="info">Физик</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
